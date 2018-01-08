@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+</head>
+<body>
+	<header>
+		<nav>
+		 David Esposito | 
+			<a href="/welcome/"> Welcome </a>
+			<a href="/portfolio/"> Portfolio </a>
+			<a href="/blog/"> Blog </a>
+			<a href="/about/"> About </a>
+			<a href="/contact/"> Contact </a>
+		</nav>
+	</header>
+	<main>
+		<p> My name is David Esposito. I am a freelance developer from Asheville North Carolina. I enjoy making websites look good and function nicely! </p>
+		<a href="/portfolio/" class="btn btn-default"> View My Work </a>
+
+	
+
+
+
+
+
+
+	</main>
+
+	<footer>
+		
+		<%= link_to 'https://github.com/dpe724' do %>
+			<%=image_tag asset_path("002-github-sign.png") %>
+		<%end%>
+
+		<%= link_to 'https://www.linkedin.com/in/david-esposito-b7a146127/' do %>
+			<%=image_tag asset_path("004-linkedin-logo.png") %>
+		<%end%>
+		<%=image_tag asset_path("001-copyright-symbol.png") %>
+	</footer>
+
+</body>
+</html>
