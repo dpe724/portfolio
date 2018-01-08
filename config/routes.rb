@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   resources :posts
 	root 'pages#welcome'
 
@@ -7,7 +8,6 @@ Rails.application.routes.draw do
 
 	get 'portfolio' => 'pages#portfolio'
 
-	get 'blog' => 'pages#blog'
 
 	get 'about' => 'pages#about'
 

@@ -4,6 +4,8 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
+    #add if statemenmt if not me riderect else where
+    
     @posts = Post.all
   end
 

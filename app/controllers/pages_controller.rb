@@ -9,6 +9,7 @@ class PagesController < ApplicationController
 	end
 
 	def blog
+		@post = Post.new
 		@posts = Post.all
 	end
 

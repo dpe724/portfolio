@@ -4,8 +4,7 @@
     <title>Portfolio</title>
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -19,13 +18,10 @@
           
           <ul>
           <li> 
-      <a href="/welcome/"> Welcome </a>
+      <a href="<%=root_path%>"> Welcome </a>
     </li>
     <li>
       <a href="/portfolio/"> Portfolio </a>
-    </li>
-    <li>
-      <a href="/blog/"> Blog </a>
     </li>
     <li>
       <a href="/about/"> About </a>
@@ -37,7 +33,7 @@
       </div>
       
       <div class="name col-xs-4">
-        <h1> David Esposito </h1>
+        <h1> David P. Esposito </h1>
       </div>
       
       </div>
@@ -55,13 +51,22 @@
           <%=image_tag asset_path("github-sign.png") %>
           <%end%>
         </li>
+        <li>
+          <%= link_to 'https://www.instagram.com/thedavenextdoor/' do %>
+        <%=image_tag asset_path("instagram-social-network-logo-of-photo-camera.png") %>
+        <%end%>
+      </li>
           <li>
         <%= link_to 'https://www.linkedin.com/in/david-esposito-b7a146127/' do %>
         <%=image_tag asset_path("linkedin-logo.png") %>
         <%end%>
       </li>
+    </li>
+      <a id="mail" class= "image" href="mailto:dpe724@gmail.com"><%= image_tag image_path('mail.png')%> </a>
+      
+      </li>
   </ul>
-    <p> © 2017 David Esposito
+    <p> © 2017 David P. Esposito
       </p>
   </div>
 </div>

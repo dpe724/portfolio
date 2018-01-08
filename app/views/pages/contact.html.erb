@@ -1,24 +1,29 @@
 <div class="main contact">
 	<div class="container">
+		<div id= "banner" class="row">
 		<h2> <span class="contact">Contact Me </span> </h2>
+	</div>
 		
-		<div class="row">
+		<div id="icons" class="row">
 			<div class="col-md-2">
-				<a><%= link_to 'https://github.com/dpe724' do %>
+				<%= link_to 'https://github.com/dpe724' do %>
           <%=image_tag asset_path("github-sign.png") %>
-          <%end%></a>
+          <%end%>
 			</div>
-			<div class="row">
+			
 			<div class="col-md-2">
-				<a><%= link_to 'https://www.linkedin.com/in/david-esposito-b7a146127/' do %>
+				<%= link_to 'https://www.linkedin.com/in/david-esposito-b7a146127/' do %>
         <%=image_tag asset_path("linkedin-logo.png") %>
-        <%end%></a>
-			</div>
-			<div class="row">
-			<div class="col-md-2">
-				<a href="mailto:dpe724@gmail.com"><%= image_tag image_path('mail.png')%> </a>
+        <%end%>
 			</div>
 
-		</div>
-	</div>
+			<div class="col-md-2">
+				<%= link_to 'https://www.instagram.com/thedavenextdoor/' do %>
+        <%=image_tag asset_path("instagram-social-network-logo-of-photo-camera.png") %>
+        <%end%>
+			</div>
+			
+			<div class="col-md-2">
+				<a id="mail" class= "image" href="mailto:dpe724@gmail.com"><%= image_tag image_path('mail.png')%> </a>
+			</div>
 </div>
